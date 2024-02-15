@@ -1,0 +1,16 @@
+#!/bin/bash
+ 
+# Define the file path
+file_path="billui_users.sql"
+ 
+# Define the patterns to delete
+patterns=("vmahidhar" "ksingha" "saireddy" "sjoseph" "ndash" "mgururaja" "lmuduli" "ddudagonda" "bali" "ashwsharma" "avarada" "abapannavar")
+ 
+# Loop through each pattern and delete it from the file
+for pattern in "${patterns[@]}"; do
+    sed -i "/$pattern/d" "$file_path"
+done
+ 
+echo "Patterns deleted from $file_path"
+
+vmahidhar|ksingha|saireddy|sjoseph|ndash" "mgururaja" "lmuduli" "ddudagonda" "bali" "ashwsharma" "avarada" "abapannavar
